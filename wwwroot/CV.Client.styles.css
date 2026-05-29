@@ -1,0 +1,227 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+.page[b-q9mx6p5w9k] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--bg-current);
+    transition: background-color 0.8s ease-in-out;
+}
+
+/* ==========================================================================
+   Main Layout
+   ========================================================================== */
+main[b-q9mx6p5w9k] {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: inherit;
+    transition: background-color 0.8s ease-in-out;
+}
+
+/* ==========================================================================
+   Top Navigation Row
+   ========================================================================== */
+
+.top-row[b-q9mx6p5w9k] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 1200;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    will-change: transform;
+    transform: translateY(0);
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.4s ease, border-color 0.4s ease;
+}
+    .top-row.top-row-hidden[b-q9mx6p5w9k] {
+        transform: translateY(-100%);
+    }
+
+    /* ==========================================================================
+   Top Row Links
+   ========================================================================== */
+    .top-row[b-q9mx6p5w9k]  a,
+    .top-row[b-q9mx6p5w9k]  .btn-link {
+        white-space: nowrap;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.92);
+        font-weight: 500;
+        transition: color 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+    }
+
+        .top-row[b-q9mx6p5w9k]  a:hover,
+        .top-row[b-q9mx6p5w9k]  .btn-link:hover {
+            opacity: 0.85;
+            transform: translateY(-1px);
+        }
+
+        .top-row[b-q9mx6p5w9k]  a:last-child {
+            margin-left: auto;
+        }
+
+/* ==========================================================================
+   Article / Page Content
+   ========================================================================== */
+article[b-q9mx6p5w9k] {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin-top: 4rem; 
+    background-color: inherit;
+    transition: background-color 0.8s ease-in-out;
+}
+
+/* ==========================================================================
+   Navigation List
+   ========================================================================== */
+.top-row[b-q9mx6p5w9k]  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    gap: 1rem;
+}
+
+.top-row[b-q9mx6p5w9k]  .nav-item {
+    padding: 0;
+}
+
+/* ==========================================================================
+   Mobile Responsive
+   ========================================================================== */
+@media (max-width: 640.98px) {
+    .top-row[b-q9mx6p5w9k] {
+        justify-content: space-between;
+        padding: 0.75rem 1rem;
+    }
+
+        .top-row[b-q9mx6p5w9k]  .nav {
+            gap: 0.75rem;
+        }
+}
+
+/* ==========================================================================
+   Desktop Responsive
+   ========================================================================== */
+@media (min-width: 641px) {
+    .top-row[b-q9mx6p5w9k] {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    article[b-q9mx6p5w9k] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+/* /Layout/NavMenu.razor.rz.scp.css */
+/* ==========================================================================
+   Horizontal Top Navigation Structural Layout
+   ========================================================================== */
+
+/* Main Container: Full width, keeps everything aligned */
+.nav-menu-container[b-srqpj6jwv8] {
+    width: 100%;
+    display: flex;
+    overflow: hidden ; /* Prevents anything from leaking outside */
+}
+
+    .nav-menu-container nav[b-srqpj6jwv8] {
+        display: flex !important;
+        align-items: center !important;
+        width: 100% !important;
+        justify-content: space-between !important;
+        padding: 0 1rem !important;
+    }
+
+.nav-links-wrapper[b-srqpj6jwv8] {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-left: 1.5rem;
+    flex: 0 1 auto; 
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.menu-collapsed .nav-links-wrapper[b-srqpj6jwv8] {
+    opacity: 0;
+    transform: scaleX(0);
+    visibility: hidden;
+    width: 0;
+    margin-left: 0;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Pin Action Controller Button Placement
+   ========================================================================== */
+.nav-pin-btn[b-srqpj6jwv8] {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    color: #ffffff;
+    margin-left: 2rem;
+    flex-shrink: 0;
+}
+
+    .nav-pin-btn:hover[b-srqpj6jwv8] {
+        background-color: rgba(255, 255, 255, 0.15);
+        transform: scale(1.05);
+    }
+
+    .nav-pin-btn.is-pinned[b-srqpj6jwv8] {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .nav-pin-btn .bi[b-srqpj6jwv8] {
+        margin-right: 0 !important;
+        font-size: 1.25rem;
+    }
+
+/* ==========================================================================
+   Utility Classes and Base Styles (Maintain original styling)
+   ========================================================================== */
+.nav-item[b-srqpj6jwv8] {
+    font-size: 0.9rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-btn[b-srqpj6jwv8] {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    transition: transform 0.15s ease;
+}
+
+    .nav-logo-btn img[b-srqpj6jwv8] {
+        height: 100%; 
+        width: auto;
+        max-width: 50px; 
+        object-fit: contain;
+        display: block;
+    }
