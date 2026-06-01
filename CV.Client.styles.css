@@ -132,11 +132,10 @@ article[b-q9mx6p5w9k] {
    Horizontal Top Navigation Structural Layout
    ========================================================================== */
 
-/* Main Container: Full width, keeps everything aligned */
 .nav-menu-container[b-srqpj6jwv8] {
     width: 100%;
     display: flex;
-    overflow: hidden ; /* Prevents anything from leaking outside */
+    overflow: hidden;
 }
 
     .nav-menu-container nav[b-srqpj6jwv8] {
@@ -152,7 +151,7 @@ article[b-q9mx6p5w9k] {
     flex-direction: row;
     gap: 1.5rem;
     margin-left: 1.5rem;
-    flex: 0 1 auto; 
+    flex: 0 1 auto;
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 
@@ -166,8 +165,62 @@ article[b-q9mx6p5w9k] {
 }
 
 /* ==========================================================================
-   Pin Action Controller Button Placement
+   Navigation Items & Hover Effects
    ========================================================================== */
+
+.nav-item[b-srqpj6jwv8] {
+    font-size: 0.9rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link[b-srqpj6jwv8] {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    opacity: 0.8;
+    padding: 0.5rem 0.75rem !important;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease !important;
+}
+
+    .nav-link:hover[b-srqpj6jwv8] {
+        opacity: 1;
+        color: #000000 !important;
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+    }
+
+/* ==========================================================================
+   Logo & Pin Action Controller
+   ========================================================================== */
+
+.nav-logo-btn[b-srqpj6jwv8] {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    transition: transform 0.15s ease;
+}
+
+    .nav-logo-btn img[b-srqpj6jwv8] {
+        height: 100%;
+        width: auto;
+        max-width: 50px;
+        object-fit: contain;
+        display: block;
+    }
+
+    .nav-logo-btn:hover[b-srqpj6jwv8] {
+        transform: scale(1.05);
+    }
+
 .nav-pin-btn[b-srqpj6jwv8] {
     background: transparent;
     border: none;
@@ -185,6 +238,7 @@ article[b-q9mx6p5w9k] {
 
     .nav-pin-btn:hover[b-srqpj6jwv8] {
         background-color: rgba(255, 255, 255, 0.15);
+        color: #000000;
         transform: scale(1.05);
     }
 
@@ -195,33 +249,4 @@ article[b-q9mx6p5w9k] {
     .nav-pin-btn .bi[b-srqpj6jwv8] {
         margin-right: 0 !important;
         font-size: 1.25rem;
-    }
-
-/* ==========================================================================
-   Utility Classes and Base Styles (Maintain original styling)
-   ========================================================================== */
-.nav-item[b-srqpj6jwv8] {
-    font-size: 0.9rem;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.nav-logo-btn[b-srqpj6jwv8] {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    height: 2.5rem;
-    transition: transform 0.15s ease;
-}
-
-    .nav-logo-btn img[b-srqpj6jwv8] {
-        height: 100%; 
-        width: auto;
-        max-width: 50px; 
-        object-fit: contain;
-        display: block;
     }
