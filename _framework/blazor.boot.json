@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CV.Client",
   "resources": {
-    "hash": "sha256-rYuYreDvjGZ1pq/OISuQ6AKKpFeXgsqOEvyKfX+IVnY=",
+    "hash": "sha256-W+Qe+z7SWb8t+kZGeSzxh2CCH3/YBz/B/cSNqX4n0uE=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-kl1kEnJ/0kgP6CiBXxh0TGGx8OxEjqiOqEqYEpUL7HE="
     },
@@ -18,7 +18,7 @@
     },
     "coreAssembly": {},
     "assembly": {
-      "CV.Client.wasm": "sha256-9JzETzXRrryD99cWHv9BcTJ03oagULAgwLqIAF8QDR0=",
+      "CV.Client.wasm": "sha256-6MF+OByXJhNqijCMqr2Lgfls2gKPzRwjbjaHazmEBvI=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-O6Ey0PD/ZQUSS7/NCRGwQk30ZQpxYuqDxgA594Hx/m4=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-/HRjk0cwtH/+G9QrEd/AR/7cpQX9XEjnQ10LMzv7IR4=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-PKEs15lSJbnJ0uI0LTzfN9TBaKFxefAh2wTN6lr6oyI=",
