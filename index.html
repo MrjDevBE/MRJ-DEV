@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV.Client</title>
 
-   <base href="/MRJ-DEV/"/>
+    <script>
+        var path = window.location.pathname.split('/');
+        if (window.location.hostname.includes("github.io") && path.length > 1) {
+            document.write('<base href="/' + path[1] + '/" />');
+        } else {
+            document.write('<base href="/" />');
+        }
+    </script>
+
     <link rel="preload" id="webassembly" />
     <link rel="preload" href="_framework/blazor.webassembly.js" as="script" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
@@ -36,7 +44,7 @@
         <span class="dismiss">🗙</span>
     </div>
 
-    <script src="./js/cv-exporter.js"></script>
+    <script src="js/cv-exporter.js"></script>
 
     <script src="_framework/blazor.webassembly.js"></script>
 </body>
