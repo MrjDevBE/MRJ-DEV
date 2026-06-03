@@ -1,5 +1,3 @@
-# MRJ-DEV
-
 # MRJ-Portfolio & CV-Engine
 A responsive, high-performance portfolio application built with **Blazor WebAssembly**. It serves as a dual-purpose tool: a professional showcase of project history and a dynamic CV-rendering engine that allows users to export resume data into formatted PDF documents using client-side JavaScript interop.
 
