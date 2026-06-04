@@ -36,5 +36,12 @@ A high-performance portfolio and CV generation platform. It provides an immersiv
 *   **JS Libraries:** `html2pdf.js`, `IntersectionObserver`
 *   **Deployment:** GitHub Pages
 
-Please use this link to visit the actual project :
-https://mrjdevbe.github.io/MRJ-DEV/
+## Contact
+Feel free to reach out to me through my social channels:
+*   [LinkedIn](https://www.linkedin.com/in/marlon-junio-4b4a69164/)
+*   [GitHub](https://github.com/MrjDevBE)
+*   [Instagram](https://www.instagram.com/papy.moja/)
+*   [Email](dev.mrjunio@gmail.com)
+*   Happy to help!
+
+Please use this link to visit the actual project : https://mrjdevbe.github.io/MrJProject/
